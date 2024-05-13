@@ -9,9 +9,9 @@ static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#2f2b25";
 static const char col_gray2[]       = "#5F5F5F";
-static const char col_gray3[]       = "#8f3bb5";
+static const char col_gray3[]       = "#FFFFFF";
 static const char col_gray4[]       = "#222222";
-static const char col_cyan[]        = "#8f3bb5";
+static const char col_cyan[]        = "#FFD68A"";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *screenshot[] = {"/home/fishy/screenshot/screenshot.sh", NULL};
+static const char *screenshot[] = {"/home/YOUR_USERNAME/screenshot/screenshot.sh", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -78,7 +78,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_a,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
@@ -89,15 +89,12 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_q,                      0)
-	TAGKEYS(                        XK_w,                      1)
-	TAGKEYS(                        XK_e,                      2)
-	TAGKEYS(                        XK_r,                      3)
-	TAGKEYS(                        XK_t,                      4)
-	TAGKEYS(                        XK_y,                      5)
-	TAGKEYS(                        XK_u,                      6)
-        TAGKEYS(                        XK_i,                      7)
-        TAGKEYS(                        XK_o,                      8)
+	TAGKEYS(                        XK_q,                      2)
+	TAGKEYS(                        XK_w,                      3)
+	TAGKEYS(                        XK_e,                      4)
+	TAGKEYS(                        XK_r,                      5)
+	TAGKEYS(                        XK_t,                      6)
+	TAGKEYS(                        XK_z,                      7)
 	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
 };
 
