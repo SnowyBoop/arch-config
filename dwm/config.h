@@ -11,7 +11,7 @@ static const char col_gray1[]       = "#2f2b25";
 static const char col_gray2[]       = "#5F5F5F";
 static const char col_gray3[]       = "#FFFFFF";
 static const char col_gray4[]       = "#222222";
-static const char col_cyan[]        = "#FFD68A"";
+static const char col_cyan[]        = "#FFD68A";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "meow","~","I","II","III","IV","V","VI","~"};
+static const char *tags[] = { "X","~","I","II","III","IV","V","VI","~"};
 
 static const Rule rules[] = {
 	/* xprop(1):
