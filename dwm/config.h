@@ -89,12 +89,12 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_q,                      2)
-	TAGKEYS(                        XK_w,                      3)
-	TAGKEYS(                        XK_e,                      4)
-	TAGKEYS(                        XK_r,                      5)
-	TAGKEYS(                        XK_t,                      6)
-	TAGKEYS(                        XK_z,                      7)
+	TAGKEYS(                        XK_q,                      0)
+	TAGKEYS(                        XK_w,                      1)
+	TAGKEYS(                        XK_e,                      2)
+	TAGKEYS(                        XK_r,                      3)
+	TAGKEYS(                        XK_t,                      4)
+	TAGKEYS(                        XK_z,                      5)
 	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
 };
 
