@@ -65,7 +65,7 @@ static const char *screenshot[] = {"/home/YOUR_USERNAME/screenshot/screenshot.sh
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } }, //dmanu fucking sucks, dont use it thanks. Keep your ram use low 
 	{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} }, 
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screenshot } },
