@@ -7,9 +7,9 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#2f2b25";
-static const char col_gray2[]       = "#5F5F5F";
-static const char col_gray3[]       = "#FFFFFF";
+static const char col_gray1[]       = "#2f2b25"; //main color of top bar
+static const char col_gray2[]       = "#5F5F5F"; // color of window styling
+static const char col_gray3[]       = "#FFFFFF"; //text-color in top bar
 static const char col_gray4[]       = "#222222";
 static const char col_cyan[]        = "#FFD68A";
 static const char *colors[][3]      = {
