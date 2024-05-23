@@ -1,5 +1,6 @@
-# dwm-config
-All files for x-server, dwm and ST! 
+# arch config
+All files for x-server, dwm and ST, that are needed to get a minimal arch install running with ease! 
 
-Obviously the worlds best config :3
-now warm color theme woop woop
+Obviously the worlds best config for productivity!
+
+Featuring my hot chocolate ST and DWM theme :D
