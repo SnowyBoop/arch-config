@@ -1,6 +1,8 @@
 # Features
 All files for x-server, dwm and ST, that are needed to get a minimal arch install running with ease! 
 
+I will add more Customisation soon
+
 Featuring my hot chocolate ST and DWM theme :D
 
 Obviously the worlds best config for productivity! (100% confirmed)
