@@ -12,5 +12,5 @@ Obviously the worlds best config for productivity! (100% confirmed)
 - chmod +x the setup.sh file i provided
 - run setup.sh
 - run "sudo make clean install" in both the dwm and st directory
-- copy the .xinitrc file into your home directory (make sure you rename it to ".xinitrc")
+- copy the .xinitrc file into your home directory (make sure you rename the kind of config you want to ".xinitrc")
 - type startx to start dwm
