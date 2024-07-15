@@ -8,10 +8,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#2f2b25"; //main color of top bar
-static const char col_gray2[]       = "#5F5F5F"; //color of window styling
-static const char col_gray3[]       = "#FFFFFF"; //text-color in top bar
+static const char col_gray2[]       = "#5F5F5F"; //top bar font color
+static const char col_gray3[]       = "#FFFFFF"; //backgrund color
 static const char col_gray4[]       = "#222222";
-static const char col_cyan[]        = "#FFD68A";
+static const char col_cyan[]        = "#FFFFFF"; //accent color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "C","I","V",",","C",",","C","V","I","I","I" ;
+static const char *tags[] = { "P","e","B","b","L","e","S","-",">>"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *screenshot[] = {"/home/YOUR_USERNAME/screenshot/screenshot.sh", NULL};
+static const char *screenshot[] = {"/home/fish/screenshot/screenshot.sh", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
