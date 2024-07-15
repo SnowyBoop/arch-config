@@ -108,41 +108,49 @@ static unsigned int defaultunderline = 7;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-  /* 8 normal colors */
-  [0] = "#9b8e53", /* black   */
+/* 8 normal colors */
+  [0] = "#1b1b1b", /* black   */
   [1] = "#a54242", /* red     */
   [2] = "#8c9440", /* green   */
   [3] = "#de935f", /* yellow  */
   [4] = "#5f819d", /* blue    */
   [5] = "#85678f", /* magenta */
   [6] = "#5e8d87", /* cyan    */
-  [7] = "#707880", /* white   */
+  [7] = "#fafafa", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#373b41", /* black   */
+  [8]  = "#303030", /* black   */
   [9]  = "#cc6666", /* red     */
-  [10] = "#c7d44b", /* green   */
-  [11] = "#ffd27b", /* yellow  */
+  [10] = "#b5bd68", /* green   */
+  [11] = "#f0c674", /* yellow  */
   [12] = "#81a2be", /* blue    */
   [13] = "#b294bb", /* magenta */
   [14] = "#8abeb7", /* cyan    */
-  [15] = "#ebebeb", /* white   */
+  [15] = "#c2ae9f", /* white   */
 
   /* special colors */
-  [256] = "#1b1914", /* background */
-  [257] = "#ffd68a", /* foreground */
+  [256] = "#050505", /* background */
+  [257] = "#ffffff", /* foreground */
 
-        /* more colors can be added after 255 to use with DefaultXX */
         "#cccccc",
         "#555555",
         "gray90", /* default foreground colour */
         "black", /* default background colour */
 };
 
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
 unsigned int defaultcs = 257;
 
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
 
 
 /*
@@ -155,6 +163,7 @@ unsigned int defaultcs = 257;
  * foreground, background, cursor, reverse cursor
  */
 
+
 static unsigned int defaultrcs = 257;
 
 /*
@@ -164,7 +173,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 7;
 
 /*
  * Default columns and rows numbers
