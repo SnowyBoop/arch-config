@@ -11,8 +11,8 @@ sleep 2s
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-DWMDIR="$SCRIPT_DIR + /dwm/"
-STDIR= "$SCRIPT_DIR + /st/"
+DWMDIR="$SCRIPT_DIR/dwm/"
+STDIR= "$SCRIPT_DIR/st/"
 
 echo "$DWMDIR + -DWM directory"
 echo "$STDIR + -ST directory"
