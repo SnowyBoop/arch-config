@@ -7,7 +7,7 @@ fi
 
 echo "-----------------------"
 echo "starting..."
-sleep 2s
+sleep 1s
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
@@ -21,21 +21,21 @@ echo "$STDIR + -ST directory"
 
 echo "-----------------------"
 echo "installing dependencies..."
-sleep 2s
+sleep 1s
 
 sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot firefox hdparm emacs
 sudo timedatectl set-timezone Europe/Berlin
 
 echo "-----------------------"
 echo "compiling DWM in $DWMDIR..."
-sleep 2s
+sleep 1s
 
 cd "$DWMDIR"
 sudo make clean install
 
 echo "-----------------------"
 echo "compiling ST in $STDIR..."
-sleep 2s
+sleep 1s
 
 cd "$STDIR"
 sudo make clean install
