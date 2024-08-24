@@ -40,5 +40,6 @@ sleep 1s
 cd "$STDIR"
 sudo make clean install
 
+echo "-----------------------"
 echo "done :D -> run startx to start x server"
 
