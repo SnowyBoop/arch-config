@@ -24,6 +24,7 @@ echo "installing dependencies..."
 sleep 1s
 
 sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot firefox hdparm emacs
+sudo pacman -S base-devel libx11 libxft libxinerama 
 sudo timedatectl set-timezone Europe/Berlin
 
 echo "-----------------------"
