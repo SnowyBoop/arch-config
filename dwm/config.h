@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 
 };
 
-/* tagging */
+/* need more tags xddd */
 static const char *tags[] = { "α","β","γ","δ","ε","ζ","η","θ","-  >>","!"};
 
 static const Rule rules[] = {
