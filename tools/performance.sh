@@ -12,9 +12,9 @@ done
 for ((i=0; i<num_cores; i++)); do
   current_governor=$(cat /sys/devices/system/cpu/cpu$i/cpufreq/scaling_governor)
   if [ "$current_governor" != "performance" ]; then
-    echo "Error: CPU core $i is not using the 'powersave' governor"
+    echo "Error: CPU core $i is not using the 'performance' governor"
     exit 1
   fi
 done
 
-echo "Success: CPU governors have been set to 'powersave' on all cores"
+echo "Success: CPU governors have been set to 'performance' on all cores"
